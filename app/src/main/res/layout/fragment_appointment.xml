@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- 'Add Appointment' Button at the top -->
+    <Button
+        android:id="@+id/addAppointmentButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Appointment"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        style="@style/MyButtonStyle"/>
+
+    <!-- ListView to display the list of appointments -->
+    <ListView
+        android:id="@+id/appointmentListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addAppointmentButton"
+        android:layout_marginTop="16dp" />
+
+    <!-- Placeholder for the add appointment form, initially hidden -->
+    <LinearLayout
+        android:id="@+id/appointmentForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_below="@id/appointmentListView">
+
+        <!-- EditText for Doctor's Name -->
+        <EditText
+            android:id="@+id/doctorNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Doctor's Name" />
+
+        <!-- EditText for Specialist -->
+        <EditText
+            android:id="@+id/specialityEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Specialist" />
+
+        <!-- TextView for Appointment Date -->
+        <TextView
+            android:id="@+id/selectedDateTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <!-- TextView for Appointment Time -->
+        <TextView
+            android:id="@+id/selectedTimeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <!-- Button to show DatePickerDialog -->
+        <Button
+            android:id="@+id/pickDateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pick Date"
+            style="@style/MyButtonStyle"/>
+
+        <!-- Button to show TimePickerDialog -->
+        <Button
+            android:id="@+id/pickTimeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pick Time"
+            style="@style/MyButtonStyle"/>
+
+        <!-- EditText for Note -->
+        <EditText
+            android:id="@+id/appointmentNoteEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Note" />
+
+        <!-- Save Appointment Button -->
+        <Button
+            android:id="@+id/saveAppointmentButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save Appointment"
+            android:layout_gravity="center_horizontal"
+            style="@style/MyButtonStyle"/>
+    </LinearLayout>
+
+</RelativeLayout>

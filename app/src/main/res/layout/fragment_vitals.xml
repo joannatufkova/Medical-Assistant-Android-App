@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/settings_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="Edit"
+        android:textSize="20sp"
+        android:textColor="#00b3b3"
+        android:textAllCaps="true"
+        android:paddingEnd="16dp"
+        android:layout_gravity="end"/>
+
+    <EditText
+        android:id="@+id/temperatureEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Body Temperature (°C)"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/pulseEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pulse Rate"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/bloodPressureEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Blood Pressure"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/bloodGlucoseEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Blood Glucose"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/respiratoryRateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Respiratory Rate"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/weightEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Weight (kg)"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/heightEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Height (cm)"
+        android:inputType="numberDecimal"/>
+
+
+    <Button
+        android:id="@+id/saveVitalsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Vitals"
+        style="@style/MyButtonStyle"/>
+
+</LinearLayout>

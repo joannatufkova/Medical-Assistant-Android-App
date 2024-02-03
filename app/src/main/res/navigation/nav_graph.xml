@@ -1,0 +1,73 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.mymdassistantf110645.ui.fragments.HomePageFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home_page" />
+
+    <fragment
+        android:id="@+id/doctorsFragment"
+        android:name="com.example.mymdassistantf110645.ui.fragments.FindDoctorFragment"
+        android:label="Find Doctor"
+        tools:layout="@layout/fragment_find_doctor" />
+
+    <fragment
+        android:id="@+id/appointmentsFragment"
+        android:name="com.example.mymdassistantf110645.ui.fragments.AppointmentFragment"
+        android:label="Appointments"
+        tools:layout="@layout/fragment_appointment" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.mymdassistantf110645.ui.fragments.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" >
+
+<!--        <action android:id="@+id/action_global_loginFragment"-->
+<!--            app:destination="@id/loginFragment" />-->
+        <action
+            android:id="@+id/action_profileFragment_to_addVitalsFragment"
+            app:destination="@id/addVitalsFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_addDocumentsFragment"
+            app:destination="@id/addDocumentsFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_labResultsFragment"
+            app:destination="@id/labResultsFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_additionalInfoFragment"
+            app:destination="@id/additionalInfoFragment" />
+    </fragment>
+
+<!--    <fragment-->
+<!--        android:id="@+id/loginFragment"-->
+<!--        android:name="com.example.mymdassistantf110645.ui.fragments.LoginFragment"-->
+<!--        android:label="Login">-->
+<!--    </fragment>-->
+
+    <fragment
+        android:id="@+id/addVitalsFragment"
+        android:name="com.example.mymdassistantf110645.ui.fragments.AddVitalsFragment"
+        android:label="Add Vitals" />
+
+    <fragment
+        android:id="@+id/addDocumentsFragment"
+        android:name="com.example.mymdassistantf110645.ui.fragments.AddDocumentsFragment"
+        android:label="Add Documents" />
+
+    <fragment
+        android:id="@+id/labResultsFragment"
+        android:name="com.example.mymdassistantf110645.ui.fragments.LabResultsFragment"
+        android:label="Lab Results" />
+
+    <fragment
+        android:id="@+id/additionalInfoFragment"
+        android:name="com.example.mymdassistantf110645.ui.fragments.AdditionalInformationFragment"
+        android:label="Additional Information" />
+
+</navigation>
