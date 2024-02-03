@@ -32,3 +32,13 @@ Profile
 
 # Broadcast Receivers
 * ReminderBroadcast: Responsible for sending reminders to users for their appointments or health tips.
+
+# Threading for File Display
+The application utilizes threading to improve performance and responsiveness. When a file is selected from the list managed by `FileListAdapter`, a new thread is spawned to load the file content asynchronously. This ensures the UI remains responsive, even when loading large files. The loaded content is then displayed in a `FileDisplayActivity`, which is designed to handle various file types.
+
+# Screen Images
+![Home Page](Desktop/screen1.png "Health Tips Feature")
+![Find Doctor](Desktop/screen2.png "Find Doctor Feature")
+![Manage Appointments](Desktop/screen3.png "Manage Appointments")
+![User Profile](Desktop/screen4.png "User Profile Feature")
+
